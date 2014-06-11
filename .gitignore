@@ -48,7 +48,7 @@ Thumbs.db
 # Package Controll generated files #
 ####################################
 node_modules
-vendor
+/vendor
 composer.lock
 bower_components
 
