@@ -20,7 +20,10 @@ class SiteProvider extends Provider
 
         // When application get request to '/' path
         $app->get('/', function () use ($app) {
-            $app->render('site/home');
+            $app->render('site/home', array(
+                'title' => 'Last Asked Question',
+                'entries' => $app->kraken->resolve('App\\Entry\\Contract\\QuestionRepositoryInterface')->find(),
+            ));
         });
 
         $app->get('/ask', function () use ($app) {

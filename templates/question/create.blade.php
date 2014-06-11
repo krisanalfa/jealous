@@ -27,14 +27,16 @@
                                         <a class="nav" href="#source">Source</a>
                                     </h2>
                                     <div class="content active" id="source">
-                                        <textarea class="ask-input" name="content" placeholder="Write your own question here"></textarea>
-                                        <span class="help-block"><small>Your input parsed in GitHub Flavored Markdown</small></span>
+                                        <div class="editor-wrapper">
+                                            <textarea class="editor" name="content" data-editor="markdown"></textarea>
+                                            <span class="help-block"><small>Your input parsed in GitHub Flavored Markdown</small></span>
+                                        </div>
                                     </div>
                                 </section>
 
                                 <section>
                                     <h2>
-                                        <a class="nav" href="#review">Review</a>
+                                        <a class="nav" href="#review">Preview</a>
                                     </h2>
                                     <div class="content" id="review"></div>
                                 </section>
@@ -67,8 +69,7 @@
 @endsection
 
 @section('injector')
-<script type="text/javascript" charset="utf-8" src="{{ URL::base('js/highlight/highlight.pack.js') }}"></script>
+<script type="text/javascript" charset="utf-8" src="{{ Theme::base('js/ace/ace.js') }}"></script>
 <script type="text/javascript" charset="utf-8" src="{{ URL::base('js/vendor/marked.js') }}"></script>
-<script type="text/javascript" charset="utf-8" src="{{ URL::base('js/ace/ace.js') }}"></script>
 <script type="text/javascript" charset="utf-8" src="{{ URL::base('js/modules/ask.js') }}"></script>
 @endsection

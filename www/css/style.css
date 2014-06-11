@@ -63,7 +63,6 @@ input[type="number"],
 textarea { background: transparent; border: 0; border-bottom: 1px solid #ddd; font-size: 0.9em; }
 select { border: 0; border-bottom: 1px solid #ddd; background-color: transparent; cursor: pointer; font-size: 0.9em; text-indent: 0.01px; text-overflow: ""; }
 textarea { font-family: monospace; }
-.ask-input { height: 450px }
 ul.flat li:last-child { margin-right: 0; }
 
 table th,
@@ -82,7 +81,7 @@ table .delete-creator { display: table; margin: 0 auto; }
 .nav-menu .wrapper { padding: 10px 0; }
 .nav-menu .brand { margin: 0; float: left; font-size: 1.1em; }
 .nav-menu .brand a { display: table; }
-.nav-menu .brand .logo { background: url(../img/logo.png) no-repeat; width: 40px; height: 42px; float: left; margin-right: 10px; display: block; background-size: contain; }
+.nav-menu .brand .logo { background: url(../img/logo.png) no-repeat; width: 40px; height: 42px; float: left; margin-right: 10px; display: block; background-size: contain; margin-top: 2px; }
 .nav-menu .brand .brand-logo { margin-top: 4px; text-transform: uppercase; display: table; float: left; line-height: 120%; color: #001842; font-family: montserratbold; }
 .nav-menu .brand .brand-logo:hover { color: #39a3d0; }
 .nav-menu .nav { float: left; margin-top: 14px; padding-left: 20px; }
@@ -266,3 +265,12 @@ article.tabs section .nav {
 }
 
 article.tabs section .nav.hover { color: #fff; background-color: #39a3d0; }
+.listview .question-container span.inline span { display: inline; }
+.question-display .hljs { width: 100%; border-radius: 10px; padding: 1.25em; }
+.rate-question { float: right; text-align: center; padding-right: 30px; padding-top: 20px; }
+.rate-question span { display: block; }
+.rate-question .rate-counter { font-size: 25px; }
+.rate-question .fa.fa-star { color: #cfcfcf; }
+.content .editor-wrapper .editor { min-height: 350px; }
+.tags .button-tags { display: inline; }
+.question-user { float: right; }

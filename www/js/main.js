@@ -47,6 +47,8 @@ function stylized () {
 $(document).ready(function() {
     'use strict';
 
+    hljs.initHighlightingOnLoad();
+
     $(document).on('click', '.tabs .nav', function(event) {
         event.preventDefault();
 
@@ -68,5 +70,5 @@ $(document).ready(function() {
         return s4() + s4() + '-' + s4() + '-' + s4() + '-' + s4() + '-' + s4() + s4() + s4();
     };
 
-    stylized ();
+    stylized();
 });

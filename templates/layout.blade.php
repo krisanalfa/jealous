@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="{{ Theme::base('fonts/montserrat/stylesheet.css') }}">
     <link rel="stylesheet" href="{{ Theme::base('fonts/open_sans/stylesheet.css') }}">
     <link rel="stylesheet" href="{{ Theme::base('css/style.css') }}">
-    <link rel="stylesheet" href="{{ URL::base('js/highlight/styles/github.css') }}">
+    <link rel="stylesheet" href="{{ Theme::base('js/highlight/styles/github.css') }}">
 
     <!-- PAGE LEVEL STYLING -->
     @yield('styler')
@@ -34,6 +34,7 @@
     </div>
 
     <script type="text/javascript" charset="utf-8" src="{{ Theme::base('js/vendor/jquery.js') }}"></script>
+    <script type="text/javascript" charset="utf-8" src="{{ Theme::base('js/highlight/highlight.pack.js') }}"></script>
     <script type="text/javascript" charset="utf-8" src="{{ Theme::base('js/vendor/underscore.js') }}"></script>
     <script type="text/javascript" charset="utf-8" src="{{ Theme::base('js/vendor/moment.js') }}"></script>
     <script type="text/javascript" charset="utf-8" src="{{ Theme::base('js/main.js') }}"></script>
